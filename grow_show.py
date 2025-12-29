@@ -44,7 +44,7 @@ class TwitchClipPlayer(tk.Frame):
         self.pack(fill="both", expand=True)
 
         # VLC Setup
-        self.vlc_instance = vlc.Instance("--vout=opengl")
+        self.vlc_instance = vlc.Instance()
         self.player = self.vlc_instance.media_player_new()
         self._attach_window_handle()
 
